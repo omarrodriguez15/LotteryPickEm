@@ -10,11 +10,11 @@ namespace LotteryPickEm
     {
         const int MAX_WHITE_BALL = 69;
         const int MAX_RED_BALL = 26;
+        static Random rand = new Random();
 
         public static List<int> GetNumbers()
         {
             List<int> numbers = new List<int>();
-            Random rand = new Random();
             int temp;
 
             for (int i = 0; i < 6;)
