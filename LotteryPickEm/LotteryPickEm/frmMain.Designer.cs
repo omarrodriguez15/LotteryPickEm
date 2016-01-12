@@ -118,12 +118,13 @@
             // 
             // btnFlip
             // 
-            this.btnFlip.Location = new System.Drawing.Point(350, 155);
+            this.btnFlip.Location = new System.Drawing.Point(334, 155);
             this.btnFlip.Name = "btnFlip";
-            this.btnFlip.Size = new System.Drawing.Size(75, 23);
+            this.btnFlip.Size = new System.Drawing.Size(127, 23);
             this.btnFlip.TabIndex = 8;
-            this.btnFlip.Text = "Flip";
+            this.btnFlip.Text = "Generate Tickets";
             this.btnFlip.UseVisualStyleBackColor = true;
+            this.btnFlip.Click += new System.EventHandler(this.btnFlip_Click);
             // 
             // lblNumbers
             // 
