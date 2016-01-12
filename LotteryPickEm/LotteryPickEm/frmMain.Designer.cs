@@ -1,6 +1,6 @@
 ﻿namespace LotteryPickEm
 {
-    partial class Form1
+    partial class frmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.btnStart = new System.Windows.Forms.Button();
             this.lblMain = new System.Windows.Forms.Label();
             this.lbl0 = new System.Windows.Forms.Label();
@@ -37,31 +38,33 @@
             this.lbl4 = new System.Windows.Forms.Label();
             this.lbl5 = new System.Windows.Forms.Label();
             this.btnFlip = new System.Windows.Forms.Button();
+            this.lblNumbers = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(165, 222);
+            this.btnStart.Location = new System.Drawing.Point(168, 155);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(75, 23);
             this.btnStart.TabIndex = 0;
-            this.btnStart.Text = "Start";
+            this.btnStart.Text = "Go!";
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // lblMain
             // 
             this.lblMain.AutoSize = true;
-            this.lblMain.Location = new System.Drawing.Point(23, 30);
+            this.lblMain.ForeColor = System.Drawing.Color.Red;
+            this.lblMain.Location = new System.Drawing.Point(341, 33);
             this.lblMain.Name = "lblMain";
-            this.lblMain.Size = new System.Drawing.Size(38, 17);
+            this.lblMain.Size = new System.Drawing.Size(74, 17);
             this.lblMain.TabIndex = 1;
-            this.lblMain.Text = "Main";
+            this.lblMain.Text = "Power Ball";
             // 
             // lbl0
             // 
             this.lbl0.AutoSize = true;
-            this.lbl0.Location = new System.Drawing.Point(23, 138);
+            this.lbl0.Location = new System.Drawing.Point(25, 77);
             this.lbl0.Name = "lbl0";
             this.lbl0.Size = new System.Drawing.Size(48, 17);
             this.lbl0.TabIndex = 2;
@@ -70,7 +73,7 @@
             // lbl1
             // 
             this.lbl1.AutoSize = true;
-            this.lbl1.Location = new System.Drawing.Point(75, 138);
+            this.lbl1.Location = new System.Drawing.Point(79, 77);
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(48, 17);
             this.lbl1.TabIndex = 3;
@@ -79,7 +82,7 @@
             // lbl2
             // 
             this.lbl2.AutoSize = true;
-            this.lbl2.Location = new System.Drawing.Point(139, 138);
+            this.lbl2.Location = new System.Drawing.Point(133, 77);
             this.lbl2.Name = "lbl2";
             this.lbl2.Size = new System.Drawing.Size(48, 17);
             this.lbl2.TabIndex = 4;
@@ -88,7 +91,7 @@
             // lbl3
             // 
             this.lbl3.AutoSize = true;
-            this.lbl3.Location = new System.Drawing.Point(204, 138);
+            this.lbl3.Location = new System.Drawing.Point(187, 77);
             this.lbl3.Name = "lbl3";
             this.lbl3.Size = new System.Drawing.Size(48, 17);
             this.lbl3.TabIndex = 5;
@@ -97,7 +100,7 @@
             // lbl4
             // 
             this.lbl4.AutoSize = true;
-            this.lbl4.Location = new System.Drawing.Point(258, 138);
+            this.lbl4.Location = new System.Drawing.Point(241, 77);
             this.lbl4.Name = "lbl4";
             this.lbl4.Size = new System.Drawing.Size(48, 17);
             this.lbl4.TabIndex = 6;
@@ -106,7 +109,8 @@
             // lbl5
             // 
             this.lbl5.AutoSize = true;
-            this.lbl5.Location = new System.Drawing.Point(328, 138);
+            this.lbl5.ForeColor = System.Drawing.Color.Red;
+            this.lbl5.Location = new System.Drawing.Point(341, 77);
             this.lbl5.Name = "lbl5";
             this.lbl5.Size = new System.Drawing.Size(48, 17);
             this.lbl5.TabIndex = 7;
@@ -114,18 +118,28 @@
             // 
             // btnFlip
             // 
-            this.btnFlip.Location = new System.Drawing.Point(350, 288);
+            this.btnFlip.Location = new System.Drawing.Point(350, 155);
             this.btnFlip.Name = "btnFlip";
             this.btnFlip.Size = new System.Drawing.Size(75, 23);
             this.btnFlip.TabIndex = 8;
             this.btnFlip.Text = "Flip";
             this.btnFlip.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // lblNumbers
+            // 
+            this.lblNumbers.AutoSize = true;
+            this.lblNumbers.Location = new System.Drawing.Point(133, 33);
+            this.lblNumbers.Name = "lblNumbers";
+            this.lblNumbers.Size = new System.Drawing.Size(65, 17);
+            this.lblNumbers.TabIndex = 9;
+            this.lblNumbers.Text = "Numbers";
+            // 
+            // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(437, 323);
+            this.ClientSize = new System.Drawing.Size(473, 224);
+            this.Controls.Add(this.lblNumbers);
             this.Controls.Add(this.btnFlip);
             this.Controls.Add(this.lbl5);
             this.Controls.Add(this.lbl4);
@@ -135,8 +149,9 @@
             this.Controls.Add(this.lbl0);
             this.Controls.Add(this.lblMain);
             this.Controls.Add(this.btnStart);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "frmMain";
+            this.Text = "Lottery Pick \'Em";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -153,6 +168,7 @@
         private System.Windows.Forms.Label lbl4;
         private System.Windows.Forms.Label lbl5;
         private System.Windows.Forms.Button btnFlip;
+        private System.Windows.Forms.Label lblNumbers;
     }
 }
 
