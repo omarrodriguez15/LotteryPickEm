@@ -19,20 +19,14 @@ namespace LotteryPickEm
 
             for (int i = 0; i < 6;)
             {
-                if (numbers.Count <= 5)
-                {
-                    temp = rand.Next(MAX_RED_BALL);
+                temp = numbers.Count <= 4 ? rand.Next(MAX_WHITE_BALL) : rand.Next(MAX_RED_BALL);
 
-                    if (!numbers.Contains(temp))
-                    {
-                        i++;
-                        //pass in max number for random to reurn
-                        numbers.Add(temp);
-                    }
-                }
-                else if (numbers.Count == 6)
+                //the or numbers.count == 5 is because they pick the power ball from
+                //a seperate bin so it can repeat a previous number
+                if (!numbers.Contains(temp) || numbers.Count == 5)
                 {
-                    numbers.Add(rand.Next(MAX_WHITE_BALL));
+                    i++;
+                    numbers.Add(temp);
                 }
             }
             return numbers;
