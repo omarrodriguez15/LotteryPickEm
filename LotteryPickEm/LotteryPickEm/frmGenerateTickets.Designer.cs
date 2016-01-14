@@ -33,11 +33,12 @@
             this.lblNumOfTickets = new System.Windows.Forms.Label();
             this.txBxNumTickets = new System.Windows.Forms.TextBox();
             this.lblStatus = new System.Windows.Forms.Label();
+            this.rbtnUniqueTickets = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(118, 159);
+            this.btnStart.Location = new System.Drawing.Point(114, 157);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(75, 23);
             this.btnStart.TabIndex = 0;
@@ -48,7 +49,7 @@
             // lblNumOfTickets
             // 
             this.lblNumOfTickets.AutoSize = true;
-            this.lblNumOfTickets.Location = new System.Drawing.Point(102, 50);
+            this.lblNumOfTickets.Location = new System.Drawing.Point(92, 50);
             this.lblNumOfTickets.Name = "lblNumOfTickets";
             this.lblNumOfTickets.Size = new System.Drawing.Size(123, 17);
             this.lblNumOfTickets.TabIndex = 1;
@@ -70,11 +71,23 @@
             this.lblStatus.Size = new System.Drawing.Size(0, 17);
             this.lblStatus.TabIndex = 3;
             // 
+            // rbtnUniqueTickets
+            // 
+            this.rbtnUniqueTickets.AutoSize = true;
+            this.rbtnUniqueTickets.Location = new System.Drawing.Point(92, 118);
+            this.rbtnUniqueTickets.Name = "rbtnUniqueTickets";
+            this.rbtnUniqueTickets.Size = new System.Drawing.Size(123, 21);
+            this.rbtnUniqueTickets.TabIndex = 4;
+            this.rbtnUniqueTickets.TabStop = true;
+            this.rbtnUniqueTickets.Text = "Unique Tickets";
+            this.rbtnUniqueTickets.UseVisualStyleBackColor = true;
+            // 
             // frmGenerateTickets
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(318, 227);
+            this.ClientSize = new System.Drawing.Size(315, 276);
+            this.Controls.Add(this.rbtnUniqueTickets);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.txBxNumTickets);
             this.Controls.Add(this.lblNumOfTickets);
@@ -93,5 +106,6 @@
         private System.Windows.Forms.Label lblNumOfTickets;
         private System.Windows.Forms.TextBox txBxNumTickets;
         private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.RadioButton rbtnUniqueTickets;
     }
 }

@@ -25,11 +25,15 @@ namespace LotteryPickEm
 
         private void GenerateTickets()
         {
-            string path = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Ticket.txt");
+            string path = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Ticket");
+            int numOfTickets = 0;
+
+            int.TryParse(txBxNumTickets.Text, out numOfTickets);
+            path += numOfTickets.ToString()+".txt";
+
             using (StreamWriter sw = new StreamWriter(path, true))
             {
-                int numOfTickets = 0;
-                int.TryParse(txBxNumTickets.Text, out numOfTickets);
+               
                 List<int> nums;
 
                 for (int i = 0; i < numOfTickets; i++)
