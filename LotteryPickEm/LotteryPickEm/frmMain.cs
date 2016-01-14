@@ -46,5 +46,10 @@ namespace LotteryPickEm
         {
             (new frmGenerateTickets()).ShowDialog();
         }
+
+        private void btnCheckTickets_Click(object sender, EventArgs e)
+        {
+            (new frmCheckTickets()).ShowDialog();
+        }
     }
 }

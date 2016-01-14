@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCheckTickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckTickets.Designer.cs">
+      <DependentUpon>frmCheckTickets.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmGenerateTickets.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,9 @@
     <Compile Include="Numbers.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCheckTickets.resx">
+      <DependentUpon>frmCheckTickets.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmGenerateTickets.resx">
       <DependentUpon>frmGenerateTickets.cs</DependentUpon>
     </EmbeddedResource>

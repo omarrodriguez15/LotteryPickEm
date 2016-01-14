@@ -38,7 +38,7 @@
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(114, 157);
+            this.btnStart.Location = new System.Drawing.Point(115, 198);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(75, 23);
             this.btnStart.TabIndex = 0;
@@ -66,7 +66,7 @@
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(102, 115);
+            this.lblStatus.Location = new System.Drawing.Point(102, 129);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(0, 17);
             this.lblStatus.TabIndex = 3;
@@ -74,7 +74,7 @@
             // rbtnUniqueTickets
             // 
             this.rbtnUniqueTickets.AutoSize = true;
-            this.rbtnUniqueTickets.Location = new System.Drawing.Point(92, 118);
+            this.rbtnUniqueTickets.Location = new System.Drawing.Point(92, 171);
             this.rbtnUniqueTickets.Name = "rbtnUniqueTickets";
             this.rbtnUniqueTickets.Size = new System.Drawing.Size(123, 21);
             this.rbtnUniqueTickets.TabIndex = 4;

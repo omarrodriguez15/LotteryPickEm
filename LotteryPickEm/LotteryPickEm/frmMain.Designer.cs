@@ -39,15 +39,16 @@
             this.lbl5 = new System.Windows.Forms.Label();
             this.btnFlip = new System.Windows.Forms.Button();
             this.lblNumbers = new System.Windows.Forms.Label();
+            this.btnCheckTickets = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(168, 155);
+            this.btnStart.Location = new System.Drawing.Point(28, 155);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(75, 23);
             this.btnStart.TabIndex = 0;
-            this.btnStart.Text = "Go!";
+            this.btnStart.Text = "Pick \'Em";
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
@@ -118,7 +119,7 @@
             // 
             // btnFlip
             // 
-            this.btnFlip.Location = new System.Drawing.Point(334, 155);
+            this.btnFlip.Location = new System.Drawing.Point(162, 155);
             this.btnFlip.Name = "btnFlip";
             this.btnFlip.Size = new System.Drawing.Size(127, 23);
             this.btnFlip.TabIndex = 8;
@@ -131,15 +132,26 @@
             this.lblNumbers.AutoSize = true;
             this.lblNumbers.Location = new System.Drawing.Point(133, 33);
             this.lblNumbers.Name = "lblNumbers";
-            this.lblNumbers.Size = new System.Drawing.Size(65, 17);
+            this.lblNumbers.Size = new System.Drawing.Size(135, 17);
             this.lblNumbers.TabIndex = 9;
-            this.lblNumbers.Text = "Numbers";
+            this.lblNumbers.Text = "Quick Pick Numbers";
+            // 
+            // btnCheckTickets
+            // 
+            this.btnCheckTickets.Location = new System.Drawing.Point(315, 155);
+            this.btnCheckTickets.Name = "btnCheckTickets";
+            this.btnCheckTickets.Size = new System.Drawing.Size(137, 23);
+            this.btnCheckTickets.TabIndex = 10;
+            this.btnCheckTickets.Text = "Check Tickets";
+            this.btnCheckTickets.UseVisualStyleBackColor = true;
+            this.btnCheckTickets.Click += new System.EventHandler(this.btnCheckTickets_Click);
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(473, 224);
+            this.ClientSize = new System.Drawing.Size(474, 210);
+            this.Controls.Add(this.btnCheckTickets);
             this.Controls.Add(this.lblNumbers);
             this.Controls.Add(this.btnFlip);
             this.Controls.Add(this.lbl5);
@@ -170,6 +182,7 @@
         private System.Windows.Forms.Label lbl5;
         private System.Windows.Forms.Button btnFlip;
         private System.Windows.Forms.Label lblNumbers;
+        private System.Windows.Forms.Button btnCheckTickets;
     }
 }
 
